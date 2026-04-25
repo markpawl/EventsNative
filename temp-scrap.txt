@@ -3,3 +3,15 @@ git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/markpawl/EventsNative.git
 git push -u origin main
+
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+
+git add .
+git commit -m "Setup for internal testing"
+git push origin main
+
+eas build --platform android --profile preview
